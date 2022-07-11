@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{   
+    background-image: url("https://i.pinimg.com/originals/d5/ce/a3/d5cea3800a9f7f6e93ac1026aea0e4ed.jpg");
+    height: 80vh;
+    width: 100%;
+    background-size: cover;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 1.5vh 0 1.5vh 0;
+    height: 5vh;
+    background: rgba(131, 149, 167, 0.7);  
+}
+
+#contactme-wrapper{
+    /* background-color: rgba(131, 149, 167, 0.7); */
+    position: fixed;
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#form-wrapper{
+    display: flex;
+    justify-content:center;
+    color: white;
+    background-color: rgba(131, 149, 167, 0.7);
+    width: 50vw;
+    height: 50%;
+    padding: 40px;
+    margin: 20vh auto 0 auto; 
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+form {
+    background:rgba(87, 101, 116, 0.1);
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 10px;  
+}
+
+#name-wrapper, #email-wrapper, #message-wrapper, #submitbutton-wrapper{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    padding: 5px;
+    font-size: 1vw;
+    min-height: 2vh;
+}
+
+h1, h2{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 2vw;
+}
+
+h2{
+    font-size: 1.5vw;
+}
+
+
+.basic-input{
+    display: flex;
+    justify-content: center;
+    resize: none;
+    width: 75%;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    border-bottom: 1px solid white;
+    background: none;
+    background-color: none;
+    color: white;
+    font-size: 1vw;
+}
+
+.errors{
+    color: red;
+    font-size: 0.5vw;
+}
+
+#message{
+    display: flex;
+    justify-content: center;
+    resize: none;
+    width: 75%;
+    height: 20vh;
+    min-height: 10vh;
+    margin: 0;
+    background-color: rgba(131, 149, 167, 0.7);
+    color: white;
+    font-size: 1vw;
+}
+
+.basic-input::-webkit-input-placeholder, #message::-webkit-input-placeholder{
+    font-size: 1vw;
+    color: rgba(214, 214, 214, 0.5);
+}
+
+.basic-input:focus{
+    border-bottom: 1px solid pink;
+}
+
+#message:focus{
+    border: 1px solid pink;
+}
+
+#submit-button{
+    color: white;
+    background: rgb(87, 101, 116);
+    width: 75%;
+    margin: 0;
+    font-size: 1vw;
+}
+
+#submit-button:hover{
+    cursor: pointer;
+    background: #2e86de;
+}
+
+@media only screen and (max-width: 1400px) {
+    html {
+      zoom: 0.8;
+    }
+  }
+
+@media only screen and (max-width: 1000px) {
+    html {
+      zoom: 0.5;
+    }
+}

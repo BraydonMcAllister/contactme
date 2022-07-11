@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsibility App</title>
+  <link rel="stylesheet" href="homescreen.css" />
+  <script src="main.js"></script>
+</head>
+<header>
+  <h1 id="main-header">BRAYDON MCALLISTER</h1>
+</header>
+<hr>
+<body>
+  <div id="backgroundimage">
+  <div id="wrapper">
+    <div id="contactme-wrapper">
+      <div id="form-wrapper">
+        <form id="contactme-form" name="contactme-form" action="mailto:braydon.mcallister@gmail.com" method="post" 
+        autocomplete="off" enctype="text/plain" target="_blank" onsubmit=" event.preventDefault(); return validateForm()">
+          <h2>Contact Me</h2>
+          <div id="name-wrapper">
+            <!-- <label for="name">Your Name:</label> -->
+            <input id="name" class="basic-input" onkeydown="clearErrors()" type="text" name="name" value="" autocomplete="off" placeholder="enter your name"/>
+            <small class="errors"></small>
+          </div>
+          <div id="email-wrapper">
+            <input id="email" class="basic-input" onkeydown="clearErrors()" type="email" name="email" value="" autocomplete="off" placeholder="enter your email"/>
+            <small class="errors"></small>
+          </div>
+          <div id="message-wrapper">
+            <!-- <label for="message">Your message:</label> -->
+            <textarea id="message" name="message" onkeydown="clearErrors()" form="contactme-form" rows="10" placeholder="enter a message (optional)" value=""></textarea>
+            <small class="errors"></small>
+          </div>
+          <div id="submitbutton-wrapper">
+          <input id="submit-button" type="submit" name="yourMessage" value="Send Email" />
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>
