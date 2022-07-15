@@ -6,7 +6,7 @@
 
 body{   
     background-image: url("https://i.pinimg.com/originals/d5/ce/a3/d5cea3800a9f7f6e93ac1026aea0e4ed.jpg");
-    height: 80vh;
+    height: 100%;
     width: 100%;
     background-size: cover;
 }
@@ -16,7 +16,7 @@ header{
     justify-content: center;
     margin: 0;
     padding: 1.5vh 0 1.5vh 0;
-    height: 5vh;
+    /* height: 5vh; */
     background: rgba(131, 149, 167, 0.7);  
 }
 
@@ -74,7 +74,7 @@ h1, h2{
     display: flex;
     justify-content: center;
     color: white;
-    font-size: 2vw;
+    font-size: 100%;
 }
 
 h2{
@@ -142,14 +142,34 @@ h2{
     background: #2e86de;
 }
 
-@media only screen and (max-width: 1400px) {
-    html {
-      zoom: 0.8;
+/* Samsung Galaxy (412px) Iphone XR (414px) */
+/* @media only screen and (max-width: 414px) {
+    body{
+        background-repeat: no-repeat;
+        background-size: 200vh;
     }
-  }
+    #form-wrapper{
+        
+        height: 100%;
+        width: 100%;
+        margin: 0;
+    }
 
-@media only screen and (max-width: 1000px) {
-    html {
-      zoom: 0.5;
+    h2{
+        font-size: 1.5em;
+    }
+} */
+
+@media only screen and (max-width: 1350px) {
+    body{
+        background-repeat: no-repeat;
+        background-size: 200vh;
+    }
+    #form-wrapper{
+        
+        height: 100%;
+        /* width: 100%; */
+        margin: 0;
     }
 }
+
