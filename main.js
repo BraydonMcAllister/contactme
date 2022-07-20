@@ -4,11 +4,16 @@ function validateForm(){
     let email = document.getElementById("email");
     let message = document.getElementById("message");
     let errors = document.getElementsByClassName("errors");
-    let invalidChars = ['!', '#', '$', '%', '^', '&', '*', '+', '-', '=', '/', '\\'];
+    let invalidChars = ['#', '$', '%', '^', '&', '*', '+', '-', '=', '/', '\\'];
     let invalidCharsInName = [];
     let invalidCharsInEmail = [];
     let invalidCharsInMessage = [];
+    let numErrorsInName = 0 ;
+    let numErrorsInEmail = 0;
+    let numErrorsinMessage = 0;
+
     let isError = false;
+   
     if(name_.value.length < 1){
         errors.item(0).innerText = "name must not be blank";
         isError = true;
@@ -18,27 +23,22 @@ function validateForm(){
      isError = true;
     }
     
-    let nameCount = 0 ;
-    let emailCount = 0;
-    let messageCount = 0;
+    
 
         for(let i = 0; i < invalidChars.length; i++){
             if(name_.value.includes(invalidChars[i])){
-                invalidCharsInName[nameCount] = invalidChars[i];
-                nameCount++;
+                invalidCharsInName[numErrorsInName] = invalidChars[i];
+                numErrorsInName++;
             }
             if(email.value.includes(invalidChars[i])){
-                invalidCharsInEmail[emailCount] = invalidChars[i];
-                emailCount++;
+                invalidCharsInEmail[numErrorsInEmail] = invalidChars[i];
+                numErrorsInEmail++;
             }
             if(message.value.includes(invalidChars[i])){
-                invalidCharsInMessage[messageCount] = invalidChars[i];
-                messageCount++;
+                invalidCharsInMessage[numErrorsinMessage] = invalidChars[i];
+                numErrorsinMessage++;
             }
         }
-
-        console.log(invalidCharsInName);
-        console.log(invalidCharsInEmail);
 
         if(invalidCharsInName.length > 0){
             errors.item(0).innerText = "invalid character name: " + invalidCharsInName.toString();  
