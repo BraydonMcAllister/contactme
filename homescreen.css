@@ -115,6 +115,11 @@ body{
         margin: 0;
         font-size: 1vw;
     }
+
+    .basic-input::-webkit-input-placeholder, #message::-webkit-input-placeholder{
+        font-size: 1vw;
+        color: rgba(0, 255, 255);
+    }
     
     
 }
@@ -133,6 +138,12 @@ header{
     body{
         background-repeat: no-repeat;
         background-size: 250vh;
+        height: 100vh;
+        overflow-y: scroll;
+    }
+
+    #backgroundimage{
+        height: 100%;
     }
 
     h2{
@@ -140,74 +151,86 @@ header{
         display: flex;
         justify-content: center;
         text-align: center;
+        /* padding: 10px; */
     }
 
     #form-wrapper{
         display: flex;
         justify-content:center;
         color: white;
-        background-color: rgba(131, 149, 167, 0.7);
-        height: 100%;
-        width: 100%;
-        padding: 40px;
-        margin: 20vh auto 0 auto; 
+        background-color: rgba(240, 238, 255, 0.7);
         box-sizing: border-box;
-        border-radius: 0;
+        height: 100%;
     }
     
     form {
-        background: black;
         width: 100%;
-        min-width: 100%;
-        max-width: 100%;
+        /* min-width: 100%; */
+
         height: 100%;
-        max-height: 100%;
-        min-height: 100%;
+        /* min-height: 100%; */
+        
         display: flex;
-        justify-content: center;
+        justify-content:center;
         flex-direction: column;
         margin: 0;
-        padding: 10px;  
+        /* padding: 20px 0 20px 0; */
+    }
+
+    #contactme-wrapper{
+        margin: 0 2vw 0 2vw;
+        height: 100%;
     }
     
     #name-wrapper, #email-wrapper, #message-wrapper, #submitbutton-wrapper{
         display: flex;
         justify-content: center;
         flex-direction: column;
-        height: 100%;
         align-items: center;
-        padding: 5px;
-        font-size: 1vw;
-        min-height: 2vh;
     }
     
     h1, h2{
         display: flex;
         justify-content: center;
         color: white;
-        font-size: 100%;
-    }
-    
-    h2{
-        font-size: 1.5vw;
-    }
-    
+    }  
     
     .basic-input{
-        width: 100%;
+        width: 90%;
+        height: 100%;
+        font-size: 2em;
+    }
+
+    #name-wrapper{
+        height: 20%;
+    }
+    #email-wrapper{
+        height: 20%;
+    }
+    #submitbutton-wrapper{
+        height: 10%;
+    }
+    #message-wrapper{
+        height: 40%;
     }
     
     .errors{
         color: red;
-        font-size: 0.5vw;
+        text-align: left;
+        width: 90%;
+        font-size: 1em;
     }
     
     #message{
-        width: 100%;
+        width: 90%;
+        height: 100%;
+        font-size: 2em;
     }
     
     #submit-button{
-        width: 100%;
+        width: 90%;
+        height: 100%;
+        font-size: 2em;
     }
 
     .basic-input:focus{
@@ -217,12 +240,14 @@ header{
     #message:focus{
         background: rgb(245, 247, 255);
     }
+
+    .basic-input::-webkit-input-placeholder, #message::-webkit-input-placeholder{
+        /* font-size: 1vw; */
+        color: grey;
+    }
 }
 
-.basic-input::-webkit-input-placeholder, #message::-webkit-input-placeholder{
-    font-size: 1vw;
-    color: rgba(214, 214, 214, 0.5);
-}
+
 
 .basic-input:focus{
     border-bottom: 1px solid pink;
