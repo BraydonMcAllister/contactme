@@ -21,23 +21,23 @@
       <div id="form-wrapper">
         <form id="contactme-form" name="contactme-form" action="https://formsubmit.co/f2025d9a4fcdce9473d3ee5e20a54698" method="POST" 
         target="_blank" onsubmit=" return validateForm()">
-          <h2>CONTACT BRAYDON MCALLISTER</h2>
-          <div id="name-wrapper">
+          
+          <div id="name-wrapper" class="textarea-wrapper">
             <!-- <label for="name">Your Name:</label> -->
-            <input id="name" class="basic-input" onkeydown="clearErrors()" type="text" name="name" value="" autocomplete="off" placeholder="enter your name"/>
-            <small class="errors"></small>
+            <input id="name" class="basic-input" onmouseenter="clearErrors()" type="text" name="name" value="" autocomplete="off" placeholder="ENTER YOUR NAME"/>
+            <small id="name-error" class="errors"></small>
           </div>
-          <div id="email-wrapper">
-            <input id="email" class="basic-input" onkeydown="clearErrors()" type="email" name="email" value="" autocomplete="off" placeholder="enter your email"/>
-            <small class="errors"></small>
+          <div id="email-wrapper" class="textarea-wrapper">
+            <input id="email" class="basic-input" onmouseenter="clearErrors()" type="email" name="email" value="" autocomplete="off" placeholder="ENTER YOUR EMAIL"/>
+            <small id="email-error" class="errors"></small>
           </div>
-          <div id="message-wrapper">
+          <div id="message-wrapper" class="textarea-wrapper">
             <!-- <label for="message">Your message:</label> -->
-            <textarea id="message" name="message" onkeydown="clearErrors()" form="contactme-form" rows="10" placeholder="enter a message (optional)" value=""></textarea>
-            <small class="errors"></small>
+            <textarea id="message" name="message" onmouseenter="clearErrors()" form="contactme-form" rows="10" placeholder="ENTER YOUR MESSAGE (optional)" value=""></textarea>
+            <small id="message-error" class="errors"></small>
           </div>
           <div id="submitbutton-wrapper">
-          <input id="submit-button" type="submit" name="yourMessage" value="Send Email" />
+          <input id="submit-button" type="submit" name="yourMessage" value="SEND" />
         </div>
         </form>
       </div>
