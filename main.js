@@ -60,6 +60,7 @@ function clearErrors(){
     let errors = document.getElementsByClassName("errors");
     for(let i = 0; i < 3; i++){
         errors.item(i).innerText = "";
+        errors.item(i).style.border="none";
     }   
 }
 
