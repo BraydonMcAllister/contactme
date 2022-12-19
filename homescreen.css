@@ -64,19 +64,20 @@ h2{
 
 .basic-input{
     width: 50%;
-    background: rgba(40, 144, 255, 0.85);  
-    border: 2px solid white;
-    border-radius: 5px;
+    /* background: rgba(40, 144, 255, 0.85);   */
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
     color: white;
 }
 
 textarea{
     width: 50%;
     background: transparent;
-    border: 2px solid white;
-    border-radius: 5px; 
+    border: none;
+    border-bottom: 2px solid white;
     color: white;
-    background: rgba(40, 144, 255, 0.7);  
+    /* background: rgba(40, 144, 255, 0.7);   */
 }
 
 header{
@@ -92,16 +93,11 @@ small{
 }
 
 .errors{
-    position: absolute;
     background: red;
-    width: 25vw;
-    border: 2px solid white;
 }
 
 .basic-input:focus{
     background: rgba(40, 144, 255, 0.7);  
-    padding: 25px;
-    border: 5px solid white; 
 }
 
 #message:focus{
@@ -110,7 +106,10 @@ small{
 }
 
 #submit-button{
-    background: rgba(255, 40, 144, 0.7);  
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    font-weight: bold;
     padding: 5px;
 }
 
@@ -125,5 +124,6 @@ small{
 
 textarea::placeholder{
     position:fixed;
+    top: 90%;
 }
 

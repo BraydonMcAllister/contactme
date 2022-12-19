@@ -41,11 +41,11 @@ function validateForm(){
         }
 
         if(invalidCharsInName.length > 0){
-            errors.item(0).innerText = "invalid character name: " + invalidCharsInName.toString();  
+            errors.item(0).innerText = "invalid character in name: " + invalidCharsInName.toString();  
             isError = true;
         }
         if(invalidCharsInEmail.length > 0){
-            errors.item(1).innerText = "invalid character email: " + invalidCharsInEmail.toString();   
+            errors.item(1).innerText = "invalid character in email: " + invalidCharsInEmail.toString();   
             isError = true;
         }
         if(invalidCharsInMessage.length > 0){

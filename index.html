@@ -24,24 +24,32 @@
           
           <div id="name-wrapper" class="textarea-wrapper">
             <!-- <label for="name">Your Name:</label> -->
-            <input id="name" class="basic-input" onmouseenter="clearErrors()" type="text" name="name" value="" autocomplete="off" placeholder="ENTER YOUR NAME"/>
-            <small id="name-error" class="errors"></small>
+            <input id="name" class="basic-input" onmouseenter="clearErrors()" type="text" name="name" value="" autocomplete="off" placeholder="NAME"/>
+            
           </div>
           <div id="email-wrapper" class="textarea-wrapper">
-            <input id="email" class="basic-input" onmouseenter="clearErrors()" type="email" name="email" value="" autocomplete="off" placeholder="ENTER YOUR EMAIL"/>
-            <small id="email-error" class="errors"></small>
+            <input id="email" class="basic-input" onmouseenter="clearErrors()" type="email" name="email" value="" autocomplete="off" placeholder="EMAIL"/>
+            
           </div>
           <div id="message-wrapper" class="textarea-wrapper">
             <!-- <label for="message">Your message:</label> -->
-            <textarea id="message" name="message" onmouseenter="clearErrors()" form="contactme-form" rows="10" placeholder="ENTER YOUR MESSAGE (optional)" value=""></textarea>
-            <small id="message-error" class="errors"></small>
+            <textarea id="message" name="message" onmouseenter="clearErrors()" form="contactme-form" rows="10" placeholder="MESSAGE (optional)" value=""></textarea>
+            
           </div>
           <div id="submitbutton-wrapper">
           <input id="submit-button" type="submit" name="yourMessage" value="SEND" />
+          <div>
+            <small id="name-error" class="errors"></small>
+            <small id="email-error" class="errors"></small>
+            <small id="message-error" class="errors"></small>
+          </div>
         </div>
+        
         </form>
       </div>
     </div>
 </body>
+
+
 
 </html>
