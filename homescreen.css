@@ -5,6 +5,12 @@
 }
 
 body{   
+    height: 100%;
+    width: 100%;
+    filter: brightness(75%);
+}
+
+#background{
     background-image: url("https://i.pinimg.com/originals/d5/ce/a3/d5cea3800a9f7f6e93ac1026aea0e4ed.jpg"); 
     opacity: 1;
     height: 100%;
@@ -39,6 +45,7 @@ h2{
 
 #contactme-form{
     display: flex;
+    
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
