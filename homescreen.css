@@ -72,30 +72,31 @@ h2{
 .basic-input{
     width: 50%;
     /* background: rgba(40, 144, 255, 0.85);   */
-    background: transparent;
-    border: none;
-    border-bottom: 2px solid white;
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid white;
+    border-radius: 5px;
     color: white;
 }
 
 textarea{
     width: 50%;
-    background: transparent;
-    border: none;
-    border-bottom: 2px solid white;
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid white;
+    border-radius: 5px;
     color: white;
-    /* background: rgba(40, 144, 255, 0.7);   */
-}
-
-header{
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 1.5vh 0 1.5vh 0;
-    background: rgba(40, 144, 255, 0.7);  
 }
 
 small{
+    color: white;
+}
+
+h1{
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.main-header{
     color: white;
 }
 
@@ -104,18 +105,18 @@ small{
 }
 
 .basic-input:focus{
-    background: rgba(40, 144, 255, 0.7);  
+    background: rgba(0, 0, 0, 0.7);
 }
 
 #message:focus{
-    background: rgba(40, 144, 255, 0.7);  
+    background: rgba(0, 0, 0, 0.7);
     /* padding: 25px; */
 }
 
 #submit-button{
-    background: transparent;
-    border: none;
-    border-bottom: 2px solid white;
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid white;
+    border-radius: 5px;
     font-weight: bold;
     padding: 5px;
 }
@@ -131,6 +132,5 @@ small{
 
 textarea::placeholder{
     position:fixed;
-    top: 90%;
 }
 
