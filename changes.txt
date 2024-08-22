@@ -1,0 +1,8 @@
+
+Wednesday, August 19, 2024
+//center text in the inputs [x]
+//change width of inputs to 50vw [x]
+//change height of inputs to 10vh [x]
+//change borders of inputs to 0.xvh [x]
+//Enlarge and move "Contact Me" title [x]
+//Errors should trigger color change of box and placeholder should display error message [x]

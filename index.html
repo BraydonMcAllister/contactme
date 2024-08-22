@@ -15,36 +15,27 @@
   
   <!-- <hr> -->
     <div id="background">
-    <div id="contactme-wrapper">
-      <div id="form-wrapper">
-        <form id="contactme-form" name="contactme-form" action="https://formsubmit.co/f2025d9a4fcdce9473d3ee5e20a54698" method="POST" 
+    <div id="contactme_wrapper">
+      <div id="form_wrapper">
+        <form id="contactme_form" name="contactme_form" action="https://formsubmit.co/f2025d9a4fcdce9473d3ee5e20a54698" method="POST" 
         target="_blank" onsubmit=" return validateForm()">
         <div>
-          <h1 id="main-header">Contact Me</h1>
+          <h1 id="main_header">Contact Me</h1>
         </div>
-          <div id="name-wrapper" class="textarea-wrapper">
-            <!-- <label for="name">Your Name:</label> -->
-            <input id="name" class="basic-input" onmouseenter="clearErrors()" type="text" name="name" value="" autocomplete="off" placeholder="NAME"/>
+          <div id="name_wrapper" class="textarea_wrapper">
+            <input id="name" class="basic_input" onmouseenter="clearErrors()" type="text" name="name" value="" autocomplete="off" placeholder="NAME"/> 
+          </div>
+          <div id="email_wrapper" class="textarea_wrapper">
+            <input id="email" class="basic_input" onmouseenter="clearErrors()" type="email" name="email" value="" autocomplete="off" placeholder="EMAIL"/>
             
           </div>
-          <div id="email-wrapper" class="textarea-wrapper">
-            <input id="email" class="basic-input" onmouseenter="clearErrors()" type="email" name="email" value="" autocomplete="off" placeholder="EMAIL"/>
+          <div id="message_wrapper" class="textarea_wrapper">
+            <textarea id="message" name="message" onmouseenter="clearErrors()" form="contactme_form" rows="10" placeholder="MESSAGE (optional)" value=""></textarea>
             
           </div>
-          <div id="message-wrapper" class="textarea-wrapper">
-            <!-- <label for="message">Your message:</label> -->
-            <textarea id="message" name="message" onmouseenter="clearErrors()" form="contactme-form" rows="10" placeholder="MESSAGE (optional)" value=""></textarea>
-            
-          </div>
-          <div id="submitbutton-wrapper">
-          <input id="submit-button" type="submit" name="yourMessage" value="SEND" />
-          <div>
-            <small id="name-error" class="errors"></small>
-            <small id="email-error" class="errors"></small>
-            <small id="message-error" class="errors"></small>
-          </div>
-        </div>
-        
+          <div id="submitbutton_wrapper">
+          <input id="submit_button" type="submit" name="yourMessage" value="SEND" />
+        </div> 
         </form>
       </div>
     </div>

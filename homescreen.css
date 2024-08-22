@@ -7,7 +7,7 @@
 body{   
     height: 100%;
     width: 100%;
-    filter: brightness(75%);
+    filter: brightness(65%);
 }
 
 #background{
@@ -25,9 +25,10 @@ h2{
 }
 
 
-#contactme-wrapper{
-    background: transparent;
-    width: 50vw;
+#contactme_wrapper{
+    background: rgba(0,0,255,0.1);
+    /* background: lightblue; */
+    width: 75vw;
     max-width: 100vw;
     height: 100vh;
     max-height: 100vh;
@@ -36,101 +37,106 @@ h2{
     margin: auto;
 }
 
-#form-wrapper{
+#form_wrapper{
     display: flex;
     justify-content: center;
     width: 100%;
     margin: auto;
 }
 
-#contactme-form{
+#contactme_form{
     display: flex;
-    
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
 
 }
 
-#submit-button{
+#submit_button{
     background: transparent;
-    width: 25vw;
+    width: 10vw;
     color: white;
-    border: 2px solid white;
+    border: 0.2vh solid white;
+    font-size: 5vh;
 }
 
-#submit-button-wrapper{
-    width: 100%;
+#submit_button_wrapper{
     display: flex;
     justify-content: center;
+    width: 100%;
+    
 }
 
-.textarea-wrapper{
+.textarea_wrapper{
     width: 100%;
 }
 
-.basic-input{
-    width: 50%;
-    /* background: rgba(40, 144, 255, 0.85);   */
-    background: rgba(0, 0, 0, 0.8);
-    border: 2px solid white;
-    border-radius: 5px;
+.basic_input{
+    width: 50vw;
+    height: 8vh;
+    background: rgba(0, 0, 0, 0.7);
+    border: 0.2vh solid white;
     color: white;
+    font-size: 3vh;
 }
 
 textarea{
-    width: 50%;
+    width: 50vw;
     background: rgba(0, 0, 0, 0.8);
-    border: 2px solid white;
-    border-radius: 5px;
+    border: 0.2vh solid white;
     color: white;
-}
-
-small{
-    color: white;
+    font-size: 3vh;
+    padding: 1vh 0 0 1vw;
 }
 
 h1{
     color: white;
     width: 100%;
     text-align: center;
+    font-size: 10vh;
 }
 
-.main-header{
+.main_header{
     color: white;
 }
 
-.errors{
-    background: red;
-}
-
-.basic-input:focus{
+.basic_input:focus{
     background: rgba(0, 0, 0, 0.7);
 }
 
 #message:focus{
     background: rgba(0, 0, 0, 0.7);
-    /* padding: 25px; */
 }
 
-#submit-button{
+#submit_button{
     background: rgba(0, 0, 0, 0.8);
     border: 2px solid white;
-    border-radius: 5px;
     font-weight: bold;
     padding: 5px;
 }
 
-#submit-button:hover{
+#submit_button:hover{
     cursor: pointer;
     background: rgba(40, 255, 144, 0.7);
 }
 
-::placeholder{
+
+input[type="text"], input[type="email"]{
+    font-size: 3vh;
+    padding-left: 1vw;
+}
+
+
+input[type="text"]::placeholder, input[type="email"]::placeholder{
     color: white;
+    padding: 1vh 0 0 1vw;
 }
 
 textarea::placeholder{
     position:fixed;
+    text-indent: 1vw;
+    padding: 15vh 0 0 15vw;
+    color: white;
 }
+
 
